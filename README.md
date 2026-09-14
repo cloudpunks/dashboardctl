@@ -2,6 +2,12 @@
 
 [![General Workflow](https://github.com/cloudpunks/dashboardctl/actions/workflows/general.yml/badge.svg)](https://github.com/cloudpunks/dashboardctl/actions/workflows/general.yml) [![Codacy Badge](https://app.codacy.com/project/badge/Grade/47d8475af4a64c49857835dd68781565)](https://app.codacy.com/gh/cloudpunks/dashboardctl/dashboard?utm_source=gh&utm_medium=referral&utm_content=&utm_campaign=Badge_grade) [![Go Reference](https://pkg.go.dev/badge/github.com/cloudpunks/dashboardctl.svg)](https://pkg.go.dev/github.com/cloudpunks/dashboardctl) [![Go Report Card](https://goreportcard.com/badge/github.com/cloudpunks/dashboardctl)](https://goreportcard.com/report/github.com/cloudpunks/dashboardctl) [![GitHub Repo](https://img.shields.io/badge/github-repo-yellowgreen)](https://github.com/cloudpunks/dashboardctl)
 
+> [!WARNING]
+> **This project is in early development.** The builtin resources are
+> **not yet stable** and can introduce **breaking changes** at any time. Pin
+> your version, review the changelog before upgrading, and do not use this
+> for production workloads until it reaches a stable release.
+
 A commandline client to interact with Curseforge. For now it's mostly used to
 fetch mods defined within modpack manifests.
 
