@@ -1,0 +1,74 @@
+---
+# yaml-language-server: $schema=https://www.schemastore.org/github-workflow.json
+name: binaries
+
+"on":
+  workflow_dispatch:
+  push:
+    branches:
+      - master
+    tags:
+      - v*
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+permissions:
+  contents: write
+  packages: write
+
+jobs:
+  binaries:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Setup nodejs
+        if: github.event_name != 'pull_request'
+        uses: actions/setup-node@v7
+        with:
+          node-version: lts/*
+
+      - name: Generate token
+        if: github.event_name != 'pull_request'
+        id: token
+        uses: actions/create-github-app-token@v3
+        with:
+          client-id: ${{ secrets.TOKEN_EXCHANGE_APP }}
+          private-key: ${{ secrets.TOKEN_EXCHANGE_KEY }}
+          permission-contents: write
+          permission-packages: write
+
+      - name: Checkout source
+        uses: actions/checkout@v7
+        with:
+          fetch-depth: 0
+
+      - name: Install tools
+        uses: jdx/mise-action@v4
+
+      - name: Configure aws
+        uses: aws-actions/configure-aws-credentials@v6
+        with:
+          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          aws-region: eu-central-1
+
+      - name: Setup signing
+        if: github.event_name != 'pull_request'
+        uses: crazy-max/ghaction-import-gpg@v7
+        with:
+          gpg_private_key: ${{ secrets.GNUPG_KEY }}
+          passphrase: ${{ secrets.GNUPG_PASSWORD }}
+
+      - name: Run release
+        env:
+          GITHUB_TOKEN: ${{ github.event_name == 'pull_request' && secrets.GITHUB_TOKEN || steps.token.outputs.token }}
+        run: |
+          if [[ $GITHUB_REF == refs/tags/* ]]; then
+            task build:release
+          else
+            task build:snapshot
+          fi
+
+...

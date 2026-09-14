@@ -1,0 +1,7 @@
+mise.local.toml
+
+.task/
+coverage.out
+
+bin/
+dist/
