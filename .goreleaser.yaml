@@ -44,18 +44,18 @@ archives:
 
 signs:
   - id: archives
-    signature: "${artifact}.asc"
-    cmd: gpg2
-    artifacts: archive
+    signature: "${artifact}.sig"
+    cmd: cosign
+    artifacts: all
+    certificate: "${artifact}.pem"
+    output: true
     args:
-      - --batch
-      - --armor
-      - --local-user
-      - 552D1DF54CBEA471C570C816EA4B5799921648E8
-      - --output
-      - ${signature}
-      - --detach-sign
-      - ${artifact}
+      - sign-blob
+      - '--oidc-provider=github-actions'
+      - '--output-certificate=${certificate}'
+      - '--output-signature=${signature}'
+      - '${artifact}'
+      - --yes
 
 snapshot:
   version_template: testing
