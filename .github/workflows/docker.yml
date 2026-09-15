@@ -40,8 +40,8 @@ jobs:
           images: |
             ghcr.io/cloudpunks/dashboardctl
           labels: |
-            org.opencontainers.image.vendor=Cloudpunks GmbH
-            maintainer=Cloudpunks GmbH <info@cloudpunks.de>
+            org.opencontainers.image.vendor=cloudpunks GmbH
+            maintainer=cloudpunks GmbH <info@cloudpunks.de>
           tags: |
             type=ref,event=pr
             type=raw,value=latest,enable=${{ github.ref == 'refs/heads/master' }}

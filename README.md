@@ -105,7 +105,7 @@ Apache-2.0
 ## Copyright
 
 ```console
-Copyright (c) 2026 Cloudpunks GmbG <info@cloudpunks.de>
+Copyright (c) 2026 cloudpunks GmbH <info@cloudpunks.de>
 ```
 
 [releases]: https://github.com/cloudpunks/dashboardctl/releases
