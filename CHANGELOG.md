@@ -1,5 +1,15 @@
 # Changelog
 
+## [1.1.0](https://github.com/cloudpunks/dashboardctl/compare/v1.0.0...v1.1.0) (2026-09-28)
+
+### Dependencies
+
+* **minor:** update dependency golangci-lint to v2.14.0 ([#13](https://github.com/cloudpunks/dashboardctl/issues/13)) ([dd07eac](https://github.com/cloudpunks/dashboardctl/commit/dd07eacd958028b22ff6156f644607cced0e57bb))
+* **minor:** update module github.com/golangci/golangci-lint/v2 to v2.14.0 ([#14](https://github.com/cloudpunks/dashboardctl/issues/14)) ([dcef6dd](https://github.com/cloudpunks/dashboardctl/commit/dcef6dd532278ca782ec57908e3b8cb76e047a12))
+* **minor:** update module github.com/mgechev/revive to v1.17.0 ([#12](https://github.com/cloudpunks/dashboardctl/issues/12)) ([766bd91](https://github.com/cloudpunks/dashboardctl/commit/766bd91e18ebdd984b263919963e9858739f8643))
+* **patch:** update dependency prek to v0.5.4 ([#15](https://github.com/cloudpunks/dashboardctl/issues/15)) ([1a33c3c](https://github.com/cloudpunks/dashboardctl/commit/1a33c3caac7e176dc6ff314e548b9473d11ab710))
+* **patch:** update golang:1.27.1-alpine docker digest to 8a5910f ([#11](https://github.com/cloudpunks/dashboardctl/issues/11)) ([f031bf1](https://github.com/cloudpunks/dashboardctl/commit/f031bf140118940f707c9463ca9d35b56bc1d1e3))
+
 ## 1.0.0 (2026-09-21)
 
 ### Features
