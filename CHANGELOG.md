@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.2.0](https://github.com/cloudpunks/dashboardctl/compare/v1.1.0...v1.2.0) (2026-10-05)
+
+### Dependencies
+
+* **minor:** update dependency hugo-extended to v0.167.0 ([#16](https://github.com/cloudpunks/dashboardctl/issues/16)) ([ccb16ae](https://github.com/cloudpunks/dashboardctl/commit/ccb16ae35b560696558acfe903da7a23308db992))
+* **minor:** update dependency task to v3.54.0 ([#18](https://github.com/cloudpunks/dashboardctl/issues/18)) ([3249086](https://github.com/cloudpunks/dashboardctl/commit/32490862846629cdb3d7e520f7cf0e58fbb1cddb))
+
 ## [1.1.0](https://github.com/cloudpunks/dashboardctl/compare/v1.0.0...v1.1.0) (2026-09-28)
 
 ### Dependencies
