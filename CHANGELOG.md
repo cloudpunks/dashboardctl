@@ -1,5 +1,15 @@
 # Changelog
 
+## [1.3.0](https://github.com/cloudpunks/dashboardctl/compare/v1.2.1...v1.3.0) (2026-10-19)
+
+### Dependencies
+
+* **minor:** update dependency golangci-lint to v2.15.0 ([#28](https://github.com/cloudpunks/dashboardctl/issues/28)) ([2d57752](https://github.com/cloudpunks/dashboardctl/commit/2d57752a74c82a618f81443a4223cb8fa4397a38))
+* **minor:** update dependency hugo-extended to v0.168.0 ([#25](https://github.com/cloudpunks/dashboardctl/issues/25)) ([ef0a7bc](https://github.com/cloudpunks/dashboardctl/commit/ef0a7bc0f14be4eb55b8165bde065a502b28fbc6))
+* **minor:** update module github.com/golangci/golangci-lint/v2 to v2.15.0 ([#26](https://github.com/cloudpunks/dashboardctl/issues/26)) ([6744364](https://github.com/cloudpunks/dashboardctl/commit/674436437a07aeafb6d97138eb54ba0365d7135e))
+* **patch:** update dependency prek to v0.5.6 ([#29](https://github.com/cloudpunks/dashboardctl/issues/29)) ([59dd019](https://github.com/cloudpunks/dashboardctl/commit/59dd019ca78e912832977b635d5c7178e5676e5c))
+* **patch:** update module github.com/grafana/grafana-foundation-sdk/go to v0.0.21 ([#27](https://github.com/cloudpunks/dashboardctl/issues/27)) ([55ea6aa](https://github.com/cloudpunks/dashboardctl/commit/55ea6aa547c9a7576eea108f83caf55c95209df7))
+
 ## [1.2.1](https://github.com/cloudpunks/dashboardctl/compare/v1.2.0...v1.2.1) (2026-10-12)
 
 ### Dependencies
