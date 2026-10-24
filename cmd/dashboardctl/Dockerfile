@@ -1,12 +1,12 @@
-FROM --platform=$BUILDPLATFORM golang:1.27.4-alpine@sha256:70bd7ddea8b6cbe5d6943cde279d6b67feb10cc924fb9100d1d8757c1575b280 AS builder
+FROM --platform=$BUILDPLATFORM ghcr.io/jdx/mise:2026.10.18-debian AS builder
+WORKDIR /src
 
-RUN apk add --no-cache -U git curl
-RUN sh -c "$(curl --location https://taskfile.dev/install.sh)" -- -d -b /usr/local/bin
+COPY mise.toml ./
+RUN --mount=type=cache,target=$MISE_CACHE_DIR \
+   mise trust && mise install
 
-WORKDIR /go/src/dashboardctl
-COPY . /go/src/dashboardctl/
-
-RUN --mount=type=cache,target=/go/pkg \
+COPY . .
+RUN --mount=type=cache,target=/root/go/pkg \
     go mod download -x
 
 ARG TARGETOS
@@ -20,8 +20,13 @@ FROM alpine:3.24@sha256:f59abe656b692d901e184be3445e084786602108599d2a51d229c0f5
 
 RUN apk add --no-cache ca-certificates mailcap
 
+RUN apk add --no-cache ca-certificates mailcap && \
+    addgroup -g 1337 dashboardctl && \
+    adduser -D -u 1337 -h /var/lib/dashboardctl -G dashboardctl dashboardctl
+
 ENTRYPOINT ["/usr/bin/dashboardctl"]
 CMD ["help"]
 
-COPY --from=builder /go/src/dashboardctl/bin/dashboardctl /usr/bin/dashboardctl
-WORKDIR /
+COPY --from=builder /src/bin/dashboardctl /usr/bin/dashboardctl
+WORKDIR /var/lib/dashboardctl
+USER dashboardctl
