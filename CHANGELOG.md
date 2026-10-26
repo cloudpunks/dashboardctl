@@ -1,5 +1,19 @@
 # Changelog
 
+## [1.4.0](https://github.com/cloudpunks/dashboardctl/compare/v1.3.0...v1.4.0) (2026-10-26)
+
+### Dependencies
+
+* **minor:** update dependency goreleaser to v2.19.0 ([#37](https://github.com/cloudpunks/dashboardctl/issues/37)) ([e2099bc](https://github.com/cloudpunks/dashboardctl/commit/e2099bc34e1ca41433e41e6d574b84bd1eabe446))
+* **patch:** update alpine:3.24 docker digest to 71e9b7b ([#35](https://github.com/cloudpunks/dashboardctl/issues/35)) ([e3eeeea](https://github.com/cloudpunks/dashboardctl/commit/e3eeeea55738e61b2453ef13dd1959d67ffb7587))
+* **patch:** update alpine:3.24 docker digest to be26560 ([#38](https://github.com/cloudpunks/dashboardctl/issues/38)) ([ac8ebf3](https://github.com/cloudpunks/dashboardctl/commit/ac8ebf32b74bb6f6679666a3612229cc91dd0dd4))
+* **patch:** update dependency cosign to v3.1.4 ([#32](https://github.com/cloudpunks/dashboardctl/issues/32)) ([4b15cd3](https://github.com/cloudpunks/dashboardctl/commit/4b15cd364615c40ac7ffa037cdfe9d299fa9d726))
+* **patch:** update dependency go to v1.27.3 ([#30](https://github.com/cloudpunks/dashboardctl/issues/30)) ([cb5afb5](https://github.com/cloudpunks/dashboardctl/commit/cb5afb5f18c85284feb2f31cee061c0ddefff0b8))
+* **patch:** update dependency prek to v0.5.7 ([#33](https://github.com/cloudpunks/dashboardctl/issues/33)) ([f82f4d8](https://github.com/cloudpunks/dashboardctl/commit/f82f4d8fe99e058069b29f93dc581fb2212e7bcf))
+* **patch:** update docker digests ([#34](https://github.com/cloudpunks/dashboardctl/issues/34)) ([0a735e0](https://github.com/cloudpunks/dashboardctl/commit/0a735e01afbbab338ad85fff1a3697f5c9aae924))
+* **patch:** update golang docker tag to v1.27.3 ([#31](https://github.com/cloudpunks/dashboardctl/issues/31)) ([f5bf1a3](https://github.com/cloudpunks/dashboardctl/commit/f5bf1a3b57ad5763d0aaeb5d1d9bda04e93e010a))
+* **patch:** update golang:1.27.3-alpine docker digest to b8c9b82 ([#36](https://github.com/cloudpunks/dashboardctl/issues/36)) ([267b5ac](https://github.com/cloudpunks/dashboardctl/commit/267b5ac79df72b356c66b0e2c49794e34a644d05))
+
 ## [1.3.0](https://github.com/cloudpunks/dashboardctl/compare/v1.2.1...v1.3.0) (2026-10-19)
 
 ### Dependencies
