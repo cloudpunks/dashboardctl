@@ -8,7 +8,7 @@ tool (
 )
 
 require (
-	github.com/grafana/grafana-foundation-sdk/go v0.0.21
+	github.com/grafana/grafana-foundation-sdk/go v0.0.22
 	github.com/joho/godotenv v1.5.1
 	github.com/rs/zerolog v1.35.1
 	github.com/spf13/cobra v1.10.2
