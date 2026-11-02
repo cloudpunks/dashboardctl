@@ -1,5 +1,15 @@
 # Changelog
 
+## [2.0.0](https://github.com/cloudpunks/dashboardctl/compare/v1.4.0...v2.0.0) (2026-11-02)
+
+### Dependencies
+
+* **major:** update node.js to v26 ([#41](https://github.com/cloudpunks/dashboardctl/issues/41)) ([ae58f61](https://github.com/cloudpunks/dashboardctl/commit/ae58f61e75a46f7635a580e286491e3a0addb693))
+* **minor:** update dependency hugo-extended to v0.169.0 ([#40](https://github.com/cloudpunks/dashboardctl/issues/40)) ([f99d88e](https://github.com/cloudpunks/dashboardctl/commit/f99d88e35e184c30fe9ad4eac08d2992c1b1c8af))
+* **patch:** update dependency prek to v0.5.9 ([#43](https://github.com/cloudpunks/dashboardctl/issues/43)) ([2a1c7c6](https://github.com/cloudpunks/dashboardctl/commit/2a1c7c64420799cc0237b012851bb63bcfbd4b44))
+* **patch:** update golang:1.27.3-alpine docker digest to d200d2d ([#39](https://github.com/cloudpunks/dashboardctl/issues/39)) ([3bb7055](https://github.com/cloudpunks/dashboardctl/commit/3bb7055d499f237402a6c04ace5012b667a12ff8))
+* **patch:** update module github.com/grafana/grafana-foundation-sdk/go to v0.0.22 ([#42](https://github.com/cloudpunks/dashboardctl/issues/42)) ([b8a31bf](https://github.com/cloudpunks/dashboardctl/commit/b8a31bf253bc5d2344fc81fc74220981995e8941))
+
 ## [1.4.0](https://github.com/cloudpunks/dashboardctl/compare/v1.3.0...v1.4.0) (2026-10-26)
 
 ### Dependencies
