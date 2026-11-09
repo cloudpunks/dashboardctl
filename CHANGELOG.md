@@ -1,5 +1,15 @@
 # Changelog
 
+## [2.1.0](https://github.com/cloudpunks/dashboardctl/compare/v2.0.0...v2.1.0) (2026-11-09)
+
+### Dependencies
+
+* **minor:** update dependency goreleaser to v2.20.0 ([#45](https://github.com/cloudpunks/dashboardctl/issues/45)) ([b2551c9](https://github.com/cloudpunks/dashboardctl/commit/b2551c97bf443ed4a12413f2261e9092907ff9d7))
+* **patch:** update alpine:3.24 docker digest to f59abe6 ([#48](https://github.com/cloudpunks/dashboardctl/issues/48)) ([7720188](https://github.com/cloudpunks/dashboardctl/commit/772018828d18e7ae923c3bc9cf9c53cb2b36b0a9))
+* **patch:** update dependency prek to v0.5.10 ([#44](https://github.com/cloudpunks/dashboardctl/issues/44)) ([947a7ac](https://github.com/cloudpunks/dashboardctl/commit/947a7ac5be40bd884f0770e3db613b95b3775d22))
+* **patch:** update docker digests ([#47](https://github.com/cloudpunks/dashboardctl/issues/47)) ([594fe1a](https://github.com/cloudpunks/dashboardctl/commit/594fe1a9145f3c5e4bf2c721b03decd0b57e67e7))
+* **patch:** update golang:1.27.3-alpine docker digest to fa48812 ([#46](https://github.com/cloudpunks/dashboardctl/issues/46)) ([ab29688](https://github.com/cloudpunks/dashboardctl/commit/ab29688477f63384e42e0ada0e071aa5c20003fb))
+
 ## [2.0.0](https://github.com/cloudpunks/dashboardctl/compare/v1.4.0...v2.0.0) (2026-11-02)
 
 ### Dependencies
