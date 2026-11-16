@@ -1,5 +1,17 @@
 # Changelog
 
+## [2.2.0](https://github.com/cloudpunks/dashboardctl/compare/v2.1.0...v2.2.0) (2026-11-16)
+
+* automated release update [skip ci] ([05989e3](https://github.com/cloudpunks/dashboardctl/commit/05989e37d01aebece8418a36700cf111e04cf729))
+
+### Dependencies
+
+* **minor:** update dependency hugo-extended to v0.170.0 ([#53](https://github.com/cloudpunks/dashboardctl/issues/53)) ([eaf58cc](https://github.com/cloudpunks/dashboardctl/commit/eaf58cc4f9785f7c14d2e9c9a01abb88c125e078))
+* **patch:** update dependency go to v1.27.4 ([#49](https://github.com/cloudpunks/dashboardctl/issues/49)) ([576f858](https://github.com/cloudpunks/dashboardctl/commit/576f85848037a3315f58111f4628e7d66cd33816))
+* **patch:** update dependency goreleaser to v2.20.1 ([#51](https://github.com/cloudpunks/dashboardctl/issues/51)) ([96b69c8](https://github.com/cloudpunks/dashboardctl/commit/96b69c806e42c75bd48fcc46fba99cb2aab08d0b))
+* **patch:** update dependency goreleaser to v2.20.2 ([#52](https://github.com/cloudpunks/dashboardctl/issues/52)) ([d974a02](https://github.com/cloudpunks/dashboardctl/commit/d974a028f3ab2fad4c922f38ab5f2d039639ee17))
+* **patch:** update golang docker tag to v1.27.4 ([#50](https://github.com/cloudpunks/dashboardctl/issues/50)) ([86cd1d8](https://github.com/cloudpunks/dashboardctl/commit/86cd1d82eeebbc1d6042c021b0b09604ae0d9425))
+
 ## [2.1.0](https://github.com/cloudpunks/dashboardctl/compare/v2.0.0...v2.1.0) (2026-11-09)
 
 ### Dependencies
