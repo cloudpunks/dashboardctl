@@ -1,4 +1,4 @@
-FROM --platform=$BUILDPLATFORM ghcr.io/jdx/mise:2026.11.11-debian@sha256:aad755e8248c93d0a92e2b7f4a25f5ffa08bd36798df1b2a0d6efa1f6982c57b AS builder
+FROM --platform=$BUILDPLATFORM ghcr.io/jdx/mise:2026.11.12-debian@sha256:9ab8d63389bf7d787f0b762e02f7b8fd5ada3d076d3e808a1f818ece155b6fe7 AS builder
 WORKDIR /src
 
 COPY mise.toml ./
