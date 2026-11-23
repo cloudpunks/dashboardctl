@@ -1,5 +1,26 @@
 # Changelog
 
+## [2.3.0](https://github.com/cloudpunks/dashboardctl/compare/v2.2.0...v2.3.0) (2026-11-23)
+
+* add standard editorconfig to repo ([98df44f](https://github.com/cloudpunks/dashboardctl/commit/98df44f114e718392f1a2f1a7356f2b514b402bf))
+* automated release update [skip ci] ([7e4167f](https://github.com/cloudpunks/dashboardctl/commit/7e4167f7de5cbf5587a506a9f1bf42b3818d08a0))
+
+### Features
+
+* use mise within dockerfile to build everything ([8a75cc3](https://github.com/cloudpunks/dashboardctl/commit/8a75cc3a30f152f58c796c8f7b9d8afbe71544e0))
+* use yaml config and dart sass for docs ([9617f22](https://github.com/cloudpunks/dashboardctl/commit/9617f22d4084fbfb6092b9de4b518f5181d85502))
+
+### Dependencies
+
+* **minor:** update ghcr.io/jdx/mise docker tag to v2026.11.9 ([#58](https://github.com/cloudpunks/dashboardctl/issues/58)) ([67ffd27](https://github.com/cloudpunks/dashboardctl/commit/67ffd27a1f8ec6a6e6c081431553fd06fefb791a))
+* **patch:** pin ghcr.io/jdx/mise docker tag to b20a78a ([#57](https://github.com/cloudpunks/dashboardctl/issues/57)) ([e1e2803](https://github.com/cloudpunks/dashboardctl/commit/e1e2803a23258bca4ef0ee546ed7106dc6c3b9d2))
+* **patch:** update dependency goreleaser to v2.20.3 ([#59](https://github.com/cloudpunks/dashboardctl/issues/59)) ([9dca073](https://github.com/cloudpunks/dashboardctl/commit/9dca07345869df319d301c5852342c3cbd1fbed8))
+* **patch:** update dependency hugo-extended to v0.170.1 ([#56](https://github.com/cloudpunks/dashboardctl/issues/56)) ([4494fd6](https://github.com/cloudpunks/dashboardctl/commit/4494fd6238a151e20dbff74bdbee29a54f5901d5))
+* **patch:** update dependency prek to v0.5.11 ([#55](https://github.com/cloudpunks/dashboardctl/issues/55)) ([52afe34](https://github.com/cloudpunks/dashboardctl/commit/52afe346f3b8fc53ab30b16c5089124ce08fcbd1))
+* **patch:** update ghcr.io/jdx/mise docker tag to v2026.11.11 ([#60](https://github.com/cloudpunks/dashboardctl/issues/60)) ([0baffd0](https://github.com/cloudpunks/dashboardctl/commit/0baffd0eb3560ad45d7c96cb6d72ad6f5a80192c))
+* **patch:** update ghcr.io/jdx/mise docker tag to v2026.11.12 ([#61](https://github.com/cloudpunks/dashboardctl/issues/61)) ([121a406](https://github.com/cloudpunks/dashboardctl/commit/121a406db11b379986dec7ff481513dc19c76dd6))
+* **patch:** update golang:1.27.4-alpine docker digest to 70bd7dd ([#54](https://github.com/cloudpunks/dashboardctl/issues/54)) ([9ad0a1b](https://github.com/cloudpunks/dashboardctl/commit/9ad0a1b7a95dfe3d4018772523eee537117e46e7))
+
 ## [2.2.0](https://github.com/cloudpunks/dashboardctl/compare/v2.1.0...v2.2.0) (2026-11-16)
 
 * automated release update [skip ci] ([05989e3](https://github.com/cloudpunks/dashboardctl/commit/05989e37d01aebece8418a36700cf111e04cf729))
